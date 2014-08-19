@@ -1,0 +1,20 @@
+{
+  "name": "Lege5Cloud",
+  "version": "0.0.0",
+  "description": "Lege5Cloud presentation site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mihaipanait/Lege5Cloud.git"
+  },
+  "author": "Mihai Panait",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihaipanait/Lege5Cloud/issues"
+  },
+  "homepage": "https://github.com/mihaipanait/Lege5Cloud",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.7.4",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
