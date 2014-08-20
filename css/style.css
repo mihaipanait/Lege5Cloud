@@ -361,7 +361,7 @@ a.anchor {
   position: relative; }
 
 .panel-heading-primary {
-  background-color: #95d066;
+  background-color: #88c25a;
   border-color: #699349; }
 
 .panel-heading-secondary {
@@ -516,7 +516,7 @@ footer .copyright {
 
 /* Button Primary Color */
 .btn-primary-base {
-  background: #95d066;
+  background: #88c25a;
   color: #fff;
   box-shadow: 0 4px #699349;
   -webkit-transition: none;
@@ -608,10 +608,10 @@ footer .copyright {
 
 /* colors */
 .primary-text {
-  color: #95d066 !important; }
+  color: #88c25a !important; }
 
 .primary-bg {
-  background: #95d066 !important; }
+  background: #88c25a !important; }
 
 .secondary-text {
   color: #fc6657 !important; }
