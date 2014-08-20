@@ -1,6 +1,21 @@
 $main-color: #7bc042;
 $footer-color: #4a4a4a;
 
+$price-heading-color: #3b99d8; //blue
+$price-heading-shadow-color: #2678bd;
+
+$primary-button-color: #95d066;//green
+$primary-button-shadow: #699349;
+
+$secondary-button-color: #fc6657;//red
+$secondary-button-shadow: #b2483e;
+
+$tertiary-button-color: #3b99d8; //blue
+$tertiary-button-shadow: #2678bd;
+
+$quaternary-button-color: #882c9c;//magenta
+$quaternary-button-shadow: #601f6f;
+
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,latin-ext);
 
@@ -258,7 +273,6 @@ a.anchor{display: block; position: relative; top: -110px; visibility: hidden;}
 /* Welcome content */
 
 .welcome {
-	/*padding:15px 0 10px;*/
 	text-align: justify;
 	h2 {
 		font-size:32px;
@@ -280,7 +294,6 @@ a.anchor{display: block; position: relative; top: -110px; visibility: hidden;}
 	.try {
 		width: 100%;
 		margin-top: 35px;
-		/*background: url('../images/letters.png') no-repeat left top;	*/
 
 		img {
 			display: table;
@@ -417,7 +430,6 @@ a.anchor{display: block; position: relative; top: -110px; visibility: hidden;}
 				-webkit-transition: all 0.4s;
 				-moz-transition: all 0.4s;
 				transition: all 0.4s;
-				/*cursor: url('../images/plus.png'), url('../images/plus.png'), move;  */
 			}
 		}
 	}
@@ -457,6 +469,22 @@ a.anchor{display: block; position: relative; top: -110px; visibility: hidden;}
 					}
 				}
 			}
+
+			.best-offer{
+				position: absolute;
+				top: 55px;
+				left: 10%;
+				right: 10%;
+				font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-size:11px;
+				line-height:15px;
+				font-weight:400;
+				text-transform: uppercase;
+				white-space:nowrap;
+				color:#fff;
+				background-color: #ffb418;
+				padding: 5px;
+			}
 		}
 
 		.list-group{
@@ -476,115 +504,25 @@ a.anchor{display: block; position: relative; top: -110px; visibility: hidden;}
 						background:#0fa285 !important;
 					}
 				}
+
+				.custom-btn {
+					margin: 15px 0px;
+				}
 			}
 		}
 	}
 }
 
-/* Heading style 1 */
 
-.panel-heading-1 {
+/* Heading Style  */
+
+.panel-heading-custom {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:30px;
-	line-height:70px;
+	font-size:27px;
+	line-height:30px;
 	font-weight:400;
 	color:#fff;
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: -30px;
-	border-radius: 0px;
-	border-bottom: 5px solid transparent;
-	background-color: #95d066;
-	border-color: #699349;
-	position: relative;
-
-	&:after{
-		content: "";
-		width:0; 
-		height:0;  
-		border-bottom:14px solid #699349;
-		border-right:23px solid transparent;
-		position: absolute;
-		right: -23px;
-	}
-
-	&:before{
-		content: "";
-		width:0; 
-		height:0;  
-		border-bottom:14px solid #699349;
-		border-left:23px solid transparent;
-		position: absolute;
-		left: -23px;
-	}
-}
-
-.panel-heading-1-green {
-	background-color: #95d066;
-	border-color: #699349;
-
-	&:after {
-		border-bottom:14px solid #699349;
-	}
-
-	&:before {
-		border-bottom:14px solid #699349;
-	}
-}
-
-.panel-heading-1-blue {
-	background-color: #3b99d8;
-	border-color: #2678bd;
-
-	&:after {
-		border-bottom:14px solid #2678bd;
-	}
-
-	&:before {
-		border-bottom:14px solid #2678bd;
-	}
-}
-
-.panel-heading-1-red {
-	background-color: #fc6657;
-	border-color: #b2483e;
-	padding-bottom: 20px;
-
-	&:after {
-		border-bottom:14px solid #b2483e;
-	}
-
-	&:before {
-		border-bottom:14px solid #b2483e;
-	}
-}
-
-.best-offer{
-	position: absolute;
-	top: 55px;
-	left: 10%;
-	right: 10%;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:11px;
-	line-height:15px;
-	font-weight:400;
-	text-transform: uppercase;
-	white-space:nowrap;
-	color:#fff;
-	background-color: #ffb418;
-	padding: 5px;
-}
-
-/* Heading Style 2 */
-
-.panel-heading-2 {
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:30px;
-	line-height:40px;
-	font-weight:400;
-	color:#fff;
-	width: 90%;
+	width: 96%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: -30px;
@@ -596,19 +534,39 @@ a.anchor{display: block; position: relative; top: -110px; visibility: hidden;}
 	position: relative;
 }
 
-.panel-heading-2-green {
-	background-color: #95d066;
-	border-color: #699349;
+.panel-heading-primary {
+	background-color: $primary-button-color;
+	border-color: $primary-button-shadow;
 }
 
-.panel-heading-2-blue {
-	background-color: #3b99d8;
-	border-color: #2678bd;
+.panel-heading-secondary {
+	background-color: $secondary-button-color;
+	border-color: $secondary-button-shadow;
 }
 
-.panel-heading-2-red {
-	background-color: #fc6657;
-	border-color: #b2483e;
+.panel-heading-tertiary {
+	background-color: $tertiary-button-color;
+	border-color: $tertiary-button-shadow;
+}
+
+.panel-heading-tertiary-80 {
+	background-color: desaturate($price-heading-color, 10%);
+	border-color: desaturate($price-heading-shadow-color, 10%);
+}
+
+.panel-heading-tertiary-60 {
+	background-color: desaturate($price-heading-color, 20%);
+	border-color: desaturate($price-heading-shadow-color, 20%);
+}
+
+.panel-heading-tertiary-40 {
+	background-color: desaturate($price-heading-color, 30%);
+	border-color: desaturate($price-heading-shadow-color, 30%);
+}
+
+.panel-heading-tertiary-20 {
+	background-color: desaturate($price-heading-color, 40%);
+	border-color: desaturate($price-heading-shadow-color, 40%);
 }
 
 .small-heading{
@@ -766,7 +724,7 @@ footer{
 			color: #c5c5c5;
 
 			&:hover {
-				color: #fc6657;
+				color: $secondary-button-color;
 			}
 		}
 	}	
@@ -774,22 +732,6 @@ footer{
 
 
 /* Extras */
-
-.lmore {
-	color:#fff;
-
-	&:hover {
-		color:#000;
-	}
-
-	span {
-		text-transform: uppercase;
-		font-size: 16px;
-		font-weight: 700;
-		letter-spacing: 2px;
-	}
-}
-
 
 /* General button style (reset) */
 .custom-btn {
@@ -819,29 +761,28 @@ footer{
 }
 
 
-/* Red Button */
-.btn-red {
-	background: #fc6657;
+/* Button Primary Color */
+.btn-primary-base {	
+	background: $primary-button-color;
 	color: #fff;
-	box-shadow: 0 4px #ab3c3c;
+	box-shadow: 0 4px $primary-button-shadow;
 	-webkit-transition: none;
 	-moz-transition: none;
 	transition: none;
 }
 
-
-/* Button Red Round Shadow */
-.btn-red-rs {
+/* Button Primary Round Shadow */
+.btn-primary-rs {
 	border-radius: 5px;
 
 	&:hover {
-		box-shadow: 0 2px #b2483e;
+		box-shadow: 0 2px $primary-button-shadow;
 		top: 2px;
 		color: #fff;
 	}
 
 	&:active {
-		box-shadow: 0 0 #b2483e;
+		box-shadow: 0 0 $primary-button-shadow;
 		top: 4px;
 	}
 
@@ -850,28 +791,29 @@ footer{
 	}
 }
 
-/* Button Green */
-.btn-green {	
-	background: #95d066;
+/* Secondary Button */
+.btn-secondary-base {
+	background: $secondary-button-color;
 	color: #fff;
-	box-shadow: 0 4px #699349;
+	box-shadow: 0 4px $secondary-button-shadow;
 	-webkit-transition: none;
 	-moz-transition: none;
 	transition: none;
 }
 
-/* Button Green Round Shadow */
-.btn-green-rs {
+
+/* Button Secondary Round Shadow */
+.btn-secondary-rs {
 	border-radius: 5px;
 
 	&:hover {
-		box-shadow: 0 2px #699349;
+		box-shadow: 0 2px $secondary-button-shadow;
 		top: 2px;
 		color: #fff;
 	}
 
 	&:active {
-		box-shadow: 0 0 #699349;
+		box-shadow: 0 0 $secondary-button-shadow;
 		top: 4px;
 	}
 
@@ -880,29 +822,28 @@ footer{
 	}
 }
 
-
-/* Button Blue */
-.btn-blue {	
-	background: #3b99d8;
+/* Button Tertiary */
+.btn-tertiary-base {	
+	background: $tertiary-button-color;
 	color: #fff;
-	box-shadow: 0 4px #2678bd;
+	box-shadow: 0 4px $tertiary-button-shadow;
 	-webkit-transition: none;
 	-moz-transition: none;
 	transition: none;
 }
 
-/* Button Blue Round Shadow */
-.btn-blue-rs {
+/* Button Tertiary Round Shadow */
+.btn-tertiary-rs {
 	border-radius: 5px;
 
 	&:hover {
-		box-shadow: 0 2px #2678bd;
+		box-shadow: 0 2px $tertiary-button-shadow;
 		top: 2px;
 		color: #fff;
 	}
 
 	&:active {
-		box-shadow: 0 0 #2678bd;
+		box-shadow: 0 0 $tertiary-button-shadow;
 		top: 4px;
 	}
 
@@ -911,28 +852,28 @@ footer{
 	}
 }
 
-/* Button Magenta */
-.btn-magenta {	
-	background: #882c9c;
+/* Button Quaternary */
+.btn-quaternary-base {	
+	background: $quaternary-button-color;
 	color: #fff;
-	box-shadow: 0 4px #601f6f;
+	box-shadow: 0 4px $quaternary-button-shadow;
 	-webkit-transition: none;
 	-moz-transition: none;
 	transition: none;
 }
 
-/* Button Magenta Round Shadow */
-.btn-magenta-rs {
+/* Button Quaternary Round Shadow */
+.btn-quaternary-rs {
 	border-radius: 5px;
 
 	&:hover {
-		box-shadow: 0 2px #601f6f;
+		box-shadow: 0 2px $quaternary-button-shadow;
 		top: 2px;
 		color: #fff;
 	}
 
 	&:active {
-		box-shadow: 0 0 #601f6f;
+		box-shadow: 0 0 $quaternary-button-shadow;
 		top: 4px;
 	}
 
@@ -948,28 +889,36 @@ footer{
 }
 
 /* colors */
-.blue-text{
-	color: #3b99d8 !important;
+
+.primary-text{
+	color: $primary-button-color !important;
 }
 
-.blue-bg{
-	background: #3b99d8 !important;
+.primary-bg{
+	background: $primary-button-color !important;
+}
+.secondary-text{
+	color: $secondary-button-color !important;
 }
 
-.red-text{
-	color: #fc6657 !important;
+.secondary-bg{
+	background: $secondary-button-color !important;
 }
 
-.red-bg{
-	background: #fc6657 !important;
+.tertiary-text{
+	color: $tertiary-button-color !important;
 }
 
-.green-text{
-	color: #95d066 !important;
+.tertiary-bg{
+	background: $tertiary-button-color !important;
 }
 
-.green-bg{
-	background: #95d066 !important;
+.quaternary-text{
+	color: $quaternary-button-color !important;
+}
+
+.quaternary-bg{
+	background: $quaternary-button-color !important;
 }
 
 .ligth-green-bg{
@@ -982,14 +931,6 @@ footer{
 
 .ligth-blue-bg{
 	background: #DAE6F5 !important;
-}
-
-.magenta-text{
-	color: #882c9c !important;
-}
-
-.magenta-bg{
-	background: #882c9c !important;
 }
 
 /* equal height rows */
@@ -1021,6 +962,45 @@ footer{
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+
+/* Bootstrap 5 columns */
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+.col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
 }
 
 @media (max-width: 767px) {
