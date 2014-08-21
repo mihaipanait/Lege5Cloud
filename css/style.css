@@ -330,8 +330,16 @@ a.anchor {
         background-color: #ffb418;
         padding: 5px; }
     .pricing .panel-default .list-group .list-group-item {
-      color: #000000;
-      font-size: 14px; }
+      color: #535353;
+      font-size: 12px; }
+      .pricing .panel-default .list-group .list-group-item strong {
+        font-size: 14px; }
+      .pricing .panel-default .list-group .list-group-item.row-one {
+        min-height: 98px; }
+      .pricing .panel-default .list-group .list-group-item.row-two {
+        min-height: 108px; }
+      .pricing .panel-default .list-group .list-group-item.row-other {
+        min-height: 34px; }
       .pricing .panel-default .list-group .list-group-item.big-text {
         font-size: 16px !important; }
       .pricing .panel-default .list-group .list-group-item .btn {

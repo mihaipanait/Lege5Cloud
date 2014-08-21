@@ -489,8 +489,24 @@ a.anchor{display: block; position: relative; top: -110px; visibility: hidden;}
 
 		.list-group{
 			.list-group-item {
-				color: #000000;
-				font-size: 14px;
+				color: #535353;
+				font-size: 12px;
+
+				strong{
+					font-size: 14px;
+				}
+
+				&.row-one{
+					min-height: 98px;
+				}
+
+				&.row-two{
+					min-height: 108px;
+				}
+
+				&.row-other{
+					min-height: 34px;
+				}
 
 				&.big-text{
 					font-size: 16px !important;
