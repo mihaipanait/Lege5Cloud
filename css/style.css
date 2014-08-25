@@ -1,3 +1,4 @@
+@charset "IBM437";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,latin-ext);
 body, html {
   height: 100%;
@@ -210,40 +211,93 @@ a.anchor {
   background: #6bac36;
   padding: 0 0 30px;
   color: #fff; }
-  .services h4 {
-    font-size: 20px;
-    margin: 0px 0 15px;
-    font-weight: 500;
-    border-bottom: white solid 1px;
-    padding-bottom: 20px; }
-  .services p {
-    font-size: 14px;
-    line-height: 24px;
-    color: #fff;
-    text-align: justify; }
-  .services .service-item {
-    margin-bottom: 60px;
-    padding-top: 25px; }
-    .services .service-item .image-link {
-      display: inline-block;
-      width: 100px;
-      height: 100px; }
-    .services .service-item .cautare-btn {
-      background: url("../images/cautare.png") no-repeat center center; }
-      .services .service-item .cautare-btn:hover {
-        background-image: url("../images/cautare-over.png"); }
-    .services .service-item .comparare-btn {
-      background: url("../images/comparare.png") no-repeat center center; }
-      .services .service-item .comparare-btn:hover {
-        background-image: url("../images/comparare-over.png"); }
-    .services .service-item .istoric-btn {
-      background: url("../images/istoric.png") no-repeat center center; }
-      .services .service-item .istoric-btn:hover {
-        background-image: url("../images/istoric-over.png"); }
-    .services .service-item .versionare-btn {
-      background: url("../images/versionare.png") no-repeat center center; }
-      .services .service-item .versionare-btn:hover {
-        background-image: url("../images/versionare-over.png"); }
+  .services .container {
+    position: relative; }
+    .services .container .service-item {
+      margin-bottom: 60px;
+      padding-top: 25px; }
+      .services .container .service-item h4 {
+        font-size: 20px;
+        margin: 0px 0 15px;
+        font-weight: 500;
+        border-bottom: white solid 1px;
+        padding-bottom: 20px; }
+      .services .container .service-item p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #fff;
+        text-align: justify; }
+      .services .container .service-item .image-link {
+        display: inline-block;
+        width: 100px;
+        height: 100px; }
+      .services .container .service-item .cautare-btn {
+        background: url("../images/cautare.png") no-repeat center center; }
+        .services .container .service-item .cautare-btn:hover {
+          background-image: url("../images/cautare-over.png"); }
+      .services .container .service-item .comparare-btn {
+        background: url("../images/comparare.png") no-repeat center center; }
+        .services .container .service-item .comparare-btn:hover {
+          background-image: url("../images/comparare-over.png"); }
+      .services .container .service-item .istoric-btn {
+        background: url("../images/istoric.png") no-repeat center center; }
+        .services .container .service-item .istoric-btn:hover {
+          background-image: url("../images/istoric-over.png"); }
+      .services .container .service-item .versionare-btn {
+        background: url("../images/versionare.png") no-repeat center center; }
+        .services .container .service-item .versionare-btn:hover {
+          background-image: url("../images/versionare-over.png"); }
+    .services .container .details {
+      padding-top: 25px;
+      margin-bottom: 10px; }
+      .services .container .details a.boxclose {
+        float: right;
+        margin-top: 0px;
+        margin-right: 0px;
+        cursor: pointer;
+        color: #FFF;
+        background: #81BE3F;
+        font-size: 40px;
+        font-weight: 300;
+        display: inline-block;
+        line-height: 0px;
+        padding: 15px 5px; }
+      .services .container .details .boxclose:before {
+        content: "×"; }
+      .services .container .details img {
+        width: 100%;
+        height: auto; }
+      .services .container .details h4 {
+        font-size: 32px;
+        margin: 0px 0 15px;
+        font-weight: 300;
+        display: table; }
+        .services .container .details h4 .description-title {
+          display: table-cell;
+          vertical-align: middle; }
+        .services .container .details h4 .image-link {
+          display: table-cell;
+          vertical-align: middle;
+          width: 100px;
+          height: 100px; }
+        .services .container .details h4 .cautare-btn {
+          background: url("../images/cautare-over.png") no-repeat center center; }
+        .services .container .details h4 .comparare-btn {
+          background: url("../images/comparare-over.png") no-repeat center center; }
+        .services .container .details h4 .istoric-btn {
+          background: url("../images/istoric-over.png") no-repeat center center; }
+        .services .container .details h4 .versionare-btn {
+          background: url("../images/versionare-over.png") no-repeat center center; }
+      .services .container .details p {
+        font-size: 16px;
+        line-height: 30px;
+        color: #fff;
+        text-align: justify; }
+      .services .container .details ul li {
+        font-size: 16px;
+        line-height: 30px;
+        color: #fff;
+        text-align: justify; }
 
 /* Screenshots content */
 .sshots {
