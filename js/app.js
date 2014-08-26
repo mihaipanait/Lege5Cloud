@@ -1,72 +1,29 @@
-var app = angular.module("app",[]);
+var app = angular.module("app",['ui.router']);
 
-app.controller("classCtrl",function($scope, $timeout){
+app.config(function($stateProvider, $urlRouterProvider){
 
-	$scope.sections = [{ "name":"one", "show": true }, 
-						{ "name":"two", "show": true },
-						{ "name":"three", "show": true },
-						{ "name":"four", "show": true },
-						{ "name":"oneDetails", "show": false }, 
-						{ "name":"twoDetails", "show": false },
-						{ "name":"threeDetails", "show": false },
-						{ "name":"fourDetails", "show": false }];
-
-	$scope.changeClass = function(senderSection){
-		if (senderSection.name === "one"){
-			$scope.sections[0].show = false;   
-			$scope.sections[1].show = false;
-			$scope.sections[2].show = false;
-			$scope.sections[3].show = false;
-			$scope.sections[4].show = true;
-		}
-		else if (senderSection.name === "two"){
-			$scope.sections[0].show = false;   
-			$scope.sections[1].show = false;
-			$scope.sections[2].show = false;
-			$scope.sections[3].show = false;
-			$scope.sections[5].show = true;
-		}
-		else if (senderSection.name === "three"){
-			$scope.sections[0].show = false;   
-			$scope.sections[1].show = false;
-			$scope.sections[2].show = false;
-			$scope.sections[3].show = false;
-			$scope.sections[6].show = true;
-		}
-		else if (senderSection.name === "four"){
-			$scope.sections[0].show = false;   
-			$scope.sections[1].show = false;
-			$scope.sections[2].show = false;
-			$scope.sections[3].show = false;
-			$scope.sections[7].show = true;
-		}
-		else if (senderSection.name === "oneDetails"){
-			$scope.sections[0].show = true;   
-			$scope.sections[1].show = true;
-			$scope.sections[2].show = true;
-			$scope.sections[3].show = true;
-			$scope.sections[4].show = false;
-		}
-		else if (senderSection.name === "twoDetails"){
-			$scope.sections[0].show = true;   
-			$scope.sections[1].show = true;
-			$scope.sections[2].show = true;
-			$scope.sections[3].show = true;
-			$scope.sections[5].show = false;
-		}
-		else if (senderSection.name === "threeDetails"){
-			$scope.sections[0].show = true;   
-			$scope.sections[1].show = true;
-			$scope.sections[2].show = true;
-			$scope.sections[3].show = true;
-			$scope.sections[6].show = false;
-		}
-		else if (senderSection.name === "fourDetails"){
-			$scope.sections[0].show = true;   
-			$scope.sections[1].show = true;
-			$scope.sections[2].show = true;
-			$scope.sections[3].show = true;
-			$scope.sections[7].show = false;
-		}
-	};
-});
+      // For any unmatched url, send to /route1
+      $urlRouterProvider.otherwise("/features")
+      
+      $stateProvider
+      .state('features', {
+      	url: "/features",
+      	templateUrl: "features"
+      })
+      .state('details-01', {
+      	url: "/details-01",
+      	templateUrl: "details-01"
+      })
+      .state('details-02', {
+      	url: "/details-02",
+      	templateUrl: "details-02"
+      })
+      .state('details-03', {
+      	url: "/details-03",
+      	templateUrl: "details-03"
+      })
+      .state('details-04', {
+      	url: "/details-04",
+      	templateUrl: "details-04"
+      })
+  });

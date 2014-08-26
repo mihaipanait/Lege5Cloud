@@ -50,7 +50,7 @@
 	<script src="js/modernizr.custom.js"></script>
 
 </head>
-<body ng-controller="classCtrl">
+<body>
 
 <!-- Header -->
 <nav class="navbar navbar-default navbar-fixed-top header" role="navigation">
@@ -183,59 +183,58 @@
 </div>
 <!-- Welcome Content -->
 
-<!-- Services -->
-<a class="anchor" id="services"></a>
-<div class="services">
-	<div class="container">
-		<div class="row row-eq-height">
+<script type="text/ng-template" id="features">
+        <div class="row row-eq-height">
 
 			<!-- Service - 1 -->
-			<div class="col-md-6 col-lg-3 text-center row-eq-height fadeIn animated" ng-show="sections[0].show">
+			<div class="col-md-6 col-lg-3 text-center row-eq-height fadeIn animated">
 				<div class="service-item">
-					<a data-scroll href="#services" ng-click="changeClass(sections[0])"><span class="image-link cautare-btn wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a>
+					<a ui-sref="details-01"><span class="image-link cautare-btn wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a>
 					<h4>Căutare rapidă</h4>
 					<p>Prin simpla introducere în căsuţa de căutare a cuvintelor cheie semnificative pentru domeniul sau actul normativ pe care îl căutaţi, se va genera o listă de rezultate cu adevărat relevante în care se face şi poziţionarea rădăcinii cuvintelor în actul respectiv.</p>
-					<div class="custom-btn-wrapper"><a data-scroll href="#services" class="custom-btn btn-tertiary-base btn-tertiary-rs" ng-click="changeClass(sections[0])">Află mai mult</a></div>
+					<div class="custom-btn-wrapper"><a ui-sref="details-01" class="custom-btn btn-tertiary-base btn-tertiary-rs">Află mai mult</a></div>
 				</div>
 			</div>
 
 			<!-- Service - 2 -->
-			<div class="col-md-6 col-lg-3 text-center row-eq-height fadeIn animated" ng-show="sections[1].show">
+			<div class="col-md-6 col-lg-3 text-center row-eq-height fadeIn animated">
 				<div class="service-item">
-					<a data-scroll href="#services" ng-click="changeClass(sections[1])"><span class="image-link comparare-btn wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.2s"></span></a>
+					<a data-scroll href="#services"><span class="image-link comparare-btn wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.2s"></span></a>
 					<h4>Comparare consolidări</h4>
 					<p>Confruntați versiunea consolidată curentă a unui act normativ, cu reglementările de la o anumită dată. Astfel, dacă un act normativ are la nivel de paragraf trimiteri la multiple acte, atunci funcția permite compararea cu oricare dintre aceste acte.</p>
-					<div class="custom-btn-wrapper"><a data-scroll href="#services" class="custom-btn btn-tertiary-base btn-tertiary-rs" ng-click="changeClass(sections[1])">Află mai mult</a></div>
+					<div class="custom-btn-wrapper"><a data-scroll href="#services" class="custom-btn btn-tertiary-base btn-tertiary-rs">Află mai mult</a></div>
 				</div>
 			</div>
 			
 			<!-- Service - 3 -->
-			<div class="col-md-6 col-lg-3 text-center row-eq-height fadeIn animated" ng-show="sections[2].show">
+			<div class="col-md-6 col-lg-3 text-center row-eq-height fadeIn animated">
 				<div class="service-item">
-					<a data-scroll href="#services" ng-click="changeClass(sections[2])"><span class="image-link istoric-btn wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s"></span></a>
+					<a data-scroll href="#services"><span class="image-link istoric-btn wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s"></span></a>
 					<h4>Istoric legislativ</h4>
 					<p>Trebuie să analizaţi nenumărate acte pentru a reconstitui cadrul legal al domeniului care vă interesează? Cu ajutorul istoricului legislativ, puteţi vedea în ordine cronologică actele normative şi modificările suferite de acestea. Scurtaţi timpul de analiză datorită acestui instrument ideal care sintetizează informaţiile într-un mod original şi rapid.</p>
-					<div class="custom-btn-wrapper"><a data-scroll href="#services" class="custom-btn btn-tertiary-base btn-tertiary-rs" ng-click="changeClass(sections[2])">Află mai mult</a></div>
+					<div class="custom-btn-wrapper"><a data-scroll href="#services" class="custom-btn btn-tertiary-base btn-tertiary-rs">Află mai mult</a></div>
 				</div>
 			</div>
 
 			<!-- Service - 4 -->
-			<div class="col-md-6 col-lg-3 text-center row-eq-height fadeIn animated" ng-show="sections[3].show">
+			<div class="col-md-6 col-lg-3 text-center row-eq-height fadeIn animated">
 				<div class="service-item">
-					<a data-scroll href="#services" ng-click="changeClass(sections[3])"><span class="image-link versionare-btn wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.4s"></span></a>
+					<a data-scroll href="#services"><span class="image-link versionare-btn wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.4s"></span></a>
 					<h4>Versionare şi comparare text paragraf</h4>
 					<p>Vizualizaţi instant relaţiile suferite de un act normativ, versiunile şi istoricul paragrafelor pentru o mai bună înţelegere a domeniului legislativ analizat. Puteţi chiar să comparaţi aceste versiuni, modul practic de afişare în pagină a acestora uşurând munca dvs. de documentare legislativă.</p>
-					<div class="custom-btn-wrapper"><a data-scroll href="#services" class="custom-btn btn-tertiary-base btn-tertiary-rs" ng-click="changeClass(sections[3])">Află mai mult</a></div>
+					<div class="custom-btn-wrapper"><a data-scroll href="#services" class="custom-btn btn-tertiary-base btn-tertiary-rs">Află mai mult</a></div>
 				</div>
 			</div>
 		</div>
+</script>
 
-		<!-- Service - 1 Details -->
+<script type="text/ng-template" id="details-01">
+<!-- Service - 1 Details -->
 		<div class="row">
-			<div class="col-md-12 col-lg-12 fadeIn animated" ng-show="sections[4].show">
+			<div class="col-md-12 col-lg-12 fadeIn animated">
 				<div class="details">
-					<a data-scroll href="#services" ng-click="changeClass(sections[4])" class="boxclose"></a>
-					<h4><a data-scroll href="#services" ng-click="changeClass(sections[4])"><span class="image-link cautare-btn zoomIn animated" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a> <span class="description-title">Căutare rapidă</span></h4>
+					<a ui-sref="features" class="boxclose"></a>
+					<h4><a ui-sref="features"><span class="image-link cautare-btn zoomIn animated" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a> <span class="description-title">Căutare rapidă</span></h4>
 					<div class="row">
 						<div class="col-md-5 col-lg-5">
 							<p><strong>Căutarea rapidă</strong> se realizează <strong>la nivelul întregii baze de date</strong> si generează <strong>instant rezultate relevante</strong>.</p><p>Apelând la cautărea rapidă, prin simpla introducere în căsuţa de căutare a sintagmelor sau cuvintelor cheie semnificative, se va genera o lista de rezultate, ordonate în funcţie de relevanta lor, care scade pe masura ce coborati in lista de rezultate.</p>	
@@ -269,12 +268,14 @@
 							</p>
 						</div>
 					</div>
-					<div class="btn-wrapper"><a data-scroll href="#services" class="custom-btn btn-tertiary-base btn-tertiary-rs" ng-click="changeClass(sections[4])">&lt; înapoi</a></div>
+					<div class="btn-wrapper"><a ui-sref="features" class="custom-btn btn-tertiary-base btn-tertiary-rs">&lt; înapoi</a></div>
 				</div>
 			</div>
 		</div>
+</script>
 
-		<!-- Service - 2 Details -->
+<script type="text/ng-template" id="details-02">
+<!-- Service - 2 Details -->
 		<div class="row">
 			<div class="col-md-12 col-lg-12 fadeIn animated" ng-show="sections[5].show">
 				<div class="details">
@@ -312,8 +313,10 @@
 				</div>
 			</div>
 		</div>
+</script>
 
-		<!-- Service - 3 Details -->
+<script type="text/ng-template" id="details-03">
+<!-- Service - 3 Details -->
 		<div class="row">
 			<div class="col-md-12 col-lg-12 fadeIn animated" ng-show="sections[6].show">
 				<div class="details">
@@ -357,8 +360,10 @@
 				</div>
 			</div>
 		</div>
+</script>
 
-		<!-- Service - 4 Details -->
+<script type="text/ng-template" id="details-04">
+<!-- Service - 4 Details -->
 		<div class="row">
 			<div class="col-md-12 col-lg-12 fadeIn animated" ng-show="sections[7].show">
 				<div class="details">
@@ -412,6 +417,13 @@
 				</div>
 			</div>
 		</div>
+</script>
+
+<!-- Services -->
+<a class="anchor" id="services"></a>
+<div class="services">
+	<div class="container" ui-view autoscroll="false">
+		
 	</div>
 </div>
 <!-- Services -->
@@ -914,6 +926,7 @@
 <!-- JavaScript -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/angular.min.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
 <script src="js/jquery.prettyphoto.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/owl-carousel/owl.carousel.js"></script>
