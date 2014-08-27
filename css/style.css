@@ -17,12 +17,7 @@ p {
   font-weight: 400; }
 
 /* Header */
-a.anchor {
-  display: block;
-  position: relative;
-  top: -110px;
-  visibility: hidden; }
-
+/* a.anchor{display: block; position: relative; top: -110px; visibility: hidden;} */
 .header {
   padding: 4px 0;
   z-index: 10000;
@@ -206,51 +201,51 @@ a.anchor {
       text-align: center;
       margin: 0 auto; }
 
-/* Services content */
-.services {
+/* Features content */
+.features {
   background: #6bac36;
   padding: 0 0 30px;
   color: #fff; }
-  .services .container {
+  .features .container {
     position: relative; }
-    .services .container .service-item {
+    .features .container .feature {
       margin-bottom: 60px;
       padding-top: 25px; }
-      .services .container .service-item h4 {
+      .features .container .feature h4 {
         font-size: 20px;
         margin: 0px 0 15px;
         font-weight: 500;
         border-bottom: white solid 1px;
         padding-bottom: 20px; }
-      .services .container .service-item p {
+      .features .container .feature p {
         font-size: 14px;
         line-height: 24px;
         color: #fff;
         text-align: justify; }
-      .services .container .service-item .image-link {
+      .features .container .feature .image-link {
         display: inline-block;
         width: 100px;
         height: 100px; }
-      .services .container .service-item .cautare-btn {
+      .features .container .feature .cautare-btn {
         background: url("../images/cautare.png") no-repeat center center; }
-        .services .container .service-item .cautare-btn:hover {
+        .features .container .feature .cautare-btn:hover {
           background-image: url("../images/cautare-over.png"); }
-      .services .container .service-item .comparare-btn {
+      .features .container .feature .comparare-btn {
         background: url("../images/comparare.png") no-repeat center center; }
-        .services .container .service-item .comparare-btn:hover {
+        .features .container .feature .comparare-btn:hover {
           background-image: url("../images/comparare-over.png"); }
-      .services .container .service-item .istoric-btn {
+      .features .container .feature .istoric-btn {
         background: url("../images/istoric.png") no-repeat center center; }
-        .services .container .service-item .istoric-btn:hover {
+        .features .container .feature .istoric-btn:hover {
           background-image: url("../images/istoric-over.png"); }
-      .services .container .service-item .versionare-btn {
+      .features .container .feature .versionare-btn {
         background: url("../images/versionare.png") no-repeat center center; }
-        .services .container .service-item .versionare-btn:hover {
+        .features .container .feature .versionare-btn:hover {
           background-image: url("../images/versionare-over.png"); }
-    .services .container .details {
+    .features .container .details {
       padding-top: 25px;
       margin-bottom: 10px; }
-      .services .container .details a.boxclose {
+      .features .container .details a.boxclose {
         float: right;
         margin-top: 0px;
         margin-right: 0px;
@@ -262,38 +257,38 @@ a.anchor {
         display: inline-block;
         line-height: 0px;
         padding: 15px 5px; }
-      .services .container .details .boxclose:before {
+      .features .container .details .boxclose:before {
         content: "×"; }
-      .services .container .details img {
+      .features .container .details img {
         width: 100%;
         height: auto; }
-      .services .container .details h4 {
+      .features .container .details h4 {
         font-size: 32px;
         margin: 0px 0 15px;
         font-weight: 300;
         display: table; }
-        .services .container .details h4 .description-title {
+        .features .container .details h4 .description-title {
           display: table-cell;
           vertical-align: middle; }
-        .services .container .details h4 .image-link {
+        .features .container .details h4 .image-link {
           display: table-cell;
           vertical-align: middle;
           width: 100px;
           height: 100px; }
-        .services .container .details h4 .cautare-btn {
+        .features .container .details h4 .cautare-btn {
           background: url("../images/cautare-over.png") no-repeat center center; }
-        .services .container .details h4 .comparare-btn {
+        .features .container .details h4 .comparare-btn {
           background: url("../images/comparare-over.png") no-repeat center center; }
-        .services .container .details h4 .istoric-btn {
+        .features .container .details h4 .istoric-btn {
           background: url("../images/istoric-over.png") no-repeat center center; }
-        .services .container .details h4 .versionare-btn {
+        .features .container .details h4 .versionare-btn {
           background: url("../images/versionare-over.png") no-repeat center center; }
-      .services .container .details p {
+      .features .container .details p {
         font-size: 16px;
         line-height: 30px;
         color: #fff;
         text-align: justify; }
-      .services .container .details ul li {
+      .features .container .details ul li {
         font-size: 16px;
         line-height: 30px;
         color: #fff;
@@ -358,7 +353,9 @@ a.anchor {
       font-size: 13px;
       line-height: 23px;
       font-weight: 400;
-      color: #555; }
+      color: #555;
+      padding-bottom: 10px;
+      padding-top: 0; }
       .pricing .panel-default .panel-body .panel-title .price {
         font-size: 40px;
         line-height: 40px;
@@ -462,8 +459,8 @@ a.anchor {
   padding-top: 12px; }
 
 .extra-margin {
-  margin-bottom: 18px !important;
-  margin-top: 29px !important; }
+  margin-bottom: 0px !important;
+  margin-top: 12px !important; }
 
 /* Tabs content */
 .tabs-content {

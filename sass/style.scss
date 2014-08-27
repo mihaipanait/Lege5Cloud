@@ -41,7 +41,7 @@ p {
 
 /* Header */
 
-a.anchor{display: block; position: relative; top: -110px; visibility: hidden;}
+/* a.anchor{display: block; position: relative; top: -110px; visibility: hidden;} */
 
 .header {
 	padding:4px 0;
@@ -311,9 +311,9 @@ a.anchor{display: block; position: relative; top: -110px; visibility: hidden;}
 	}
 }
 
-/* Services content */
+/* Features content */
 
-.services {
+.features {
 	background: $main-color;
 	padding: 0 0 30px;
 	color: #fff;
@@ -321,7 +321,7 @@ a.anchor{display: block; position: relative; top: -110px; visibility: hidden;}
 	.container{
 		position: relative;
 
-		.service-item {
+		.feature {
 			margin-bottom: 60px;
 			padding-top: 25px;
 
@@ -534,6 +534,8 @@ a.anchor{display: block; position: relative; top: -110px; visibility: hidden;}
 			line-height:23px;
 			font-weight:400;
 			color:#555;
+			padding-bottom: 10px;
+			padding-top: 0;
 
 			.panel-title {
 
@@ -682,8 +684,8 @@ a.anchor{display: block; position: relative; top: -110px; visibility: hidden;}
 }
 
 .extra-margin{
-	margin-bottom: 18px !important;
-	margin-top: 29px !important;
+	margin-bottom: 0px !important;
+	margin-top: 12px !important;
 }
 
 
