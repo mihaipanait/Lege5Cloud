@@ -611,6 +611,85 @@ p {
 			}
 		}
 	}
+
+	.details{
+			padding-top: 25px;
+			margin-bottom: 10px;
+			color: #fff;
+
+			a.boxclose{
+				float: right;
+				margin-top: 0px;
+				margin-right: 0px;
+				cursor: pointer;
+				color: #FFF;
+				background: #81BE3F;
+				font-size: 40px;
+				font-weight: 300;
+				display: inline-block;
+				line-height: 0px;
+				padding: 15px 5px;      
+			}
+
+			.boxclose:before {
+				content: "×";
+
+			}
+
+			img{
+				width: 100%;
+				height: auto;
+			}
+
+			h4 {
+				font-size:32px;
+				margin:0px 0 15px;
+				font-weight:300;				
+				display: table;
+
+				.description-title{
+					display: table-cell;
+					vertical-align: middle;
+				}
+
+				.image-link{
+					display: table-cell;
+					vertical-align: middle;
+					width: 100px;
+					height: 100px;
+				}
+
+				.cautare-btn{
+					background: url('../images/cautare-over.png') no-repeat center center;
+				}
+
+				.comparare-btn{
+					background: url('../images/comparare-over.png') no-repeat center center;
+				}
+
+				.istoric-btn{
+					background: url('../images/istoric-over.png') no-repeat center center;
+				}
+
+				.versionare-btn{
+					background: url('../images/versionare-over.png') no-repeat center center;
+				}
+			}
+
+			p {
+				font-size:16px;
+				line-height:30px;
+				color:#fff;
+				text-align: justify;
+			}	
+
+			ul li {
+				font-size:16px;
+				line-height:30px;
+				color:#fff;
+				text-align: justify;
+			}				
+		}
 }
 
 

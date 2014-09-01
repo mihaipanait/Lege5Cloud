@@ -268,7 +268,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="btn-wrapper"><a ui-sref="root.features" class="custom-btn btn-tertiary-base btn-tertiary-rs">&lt; înapoi</a></div>
+					<div class="btn-wrapper"><a ui-sref="root.features" class="custom-btn btn-tertiary-base btn-tertiary-rs">înapoi la facilități</a></div>
 				</div>
 			</div>
 		</div>
@@ -309,7 +309,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="btn-wrapper"><a ui-sref="root.features" class="custom-btn btn-tertiary-base btn-tertiary-rs">&lt; Înapoi</a></div>
+					<div class="btn-wrapper"><a ui-sref="root.features" class="custom-btn btn-tertiary-base btn-tertiary-rs">înapoi la facilități</a></div>
 				</div>
 			</div>
 		</div>
@@ -356,7 +356,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="btn-wrapper"><a ui-sref="root.features" class="custom-btn btn-tertiary-base btn-tertiary-rs">&lt; Înapoi</a></div>
+					<div class="btn-wrapper"><a ui-sref="root.features" class="custom-btn btn-tertiary-base btn-tertiary-rs">înapoi la facilități</a></div>
 				</div>
 			</div>
 		</div>
@@ -413,7 +413,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="btn-wrapper"><a ui-sref="root.features" class="custom-btn btn-tertiary-base btn-tertiary-rs">&lt; Înapoi</a></div>
+					<div class="btn-wrapper"><a ui-sref="root.features" class="custom-btn btn-tertiary-base btn-tertiary-rs">înapoi la facilități</a></div>
 				</div>
 			</div>
 		</div>
@@ -422,11 +422,10 @@
 <!-- Features -->
 <a class="anchor" id="features"></a>
 <div class="features">
-	<div class="container" ui-view="features-view" autoscroll="false">
-		
+	<div class="container" ui-view="features-view" autoscroll="false">		
 	</div>
-	<div class="container" ui-view="features-details-view" autoscroll="false">
-		
+	<a class="anchor" id="features-details"></a>
+	<div class="container" ui-view="features-details-view" autoscroll="false">		
 	</div>
 </div>
 <!-- Features -->
@@ -788,13 +787,24 @@
 		<div class="col-md-12 col-lg-12 fadeIn animated">
 			<div class="details">
 				<a ui-sref="root.pricing" class="boxclose"></a>
-				<h4><a ui-sref="root.pricing"><span class="image-link cautare-btn zoomIn animated" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a> <span class="description-title">Pricing Details 01</span></h4>
+				<h4><a ui-sref="root.pricing"><span class="image-link cautare-btn zoomIn animated" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a> <span class="description-title">Abonamentul Easy Access</span></h4>
 				<div class="row">
 					<div class="col-md-12 col-lg-12">
-						<p>Pricing Details 01.</p>
+						<p><strong>Bază de date:</strong></p>
+						<ul>
+							<li>Legislația României publicată în Mof partea I, a V-a și a VI-a;</li>
+							<li>Se prezintă spre vizualizare, <strong>exclusiv, textul aplicabil în formă la zi;</strong></li>
+							<li>Dosare în instanță – căutare; vizualizare inf. despre dosarele de interes.</li>
+						</ul>
+						<p><strong>Funcționalități:</strong></p>
+						<ul>
+							<li>Căutare rapidă cu obținerea de rezultate relevante;</li>
+							<li>La nivel de act normativ: exclusiv forma consolidată la zi; navigare rapida în document; descărcare și tipărire document;</li>
+							<li>Sistem de notificări noutăți legislative pe domeniile de interes și/sau asupra modificărilor pe documentele setate ca și favorite.</li>
+						</ul>
 					</div>
 				</div>
-				<div class="btn-wrapper"><a ui-sref="root.pricing" class="custom-btn btn-tertiary-base btn-tertiary-rs">&lt; înapoi</a></div>
+				<div class="btn-wrapper"><a ui-sref="root.pricing" class="custom-btn btn-tertiary-base btn-tertiary-rs">înapoi la abonamente</a></div>
 			</div>
 		</div>
 	</div>
@@ -806,13 +816,25 @@
 		<div class="col-md-12 col-lg-12 fadeIn animated">
 			<div class="details">
 				<a ui-sref="root.pricing" class="boxclose"></a>
-				<h4><a ui-sref="root.pricing"><span class="image-link cautare-btn zoomIn animated" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a> <span class="description-title">Pricing Details 02</span></h4>
+				<h4><a ui-sref="root.pricing"><span class="image-link cautare-btn zoomIn animated" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a> <span class="description-title">Abonamentul Go</span></h4>
 				<div class="row">
 					<div class="col-md-12 col-lg-12">
-						<p>Pricing Details 02.</p>
+						<p><strong>Bază de date:</strong></p>
+						<ul>
+							<li>Legislația României publicată în Mof partea I, a V-a și a VI-a;</li>
+							<li><strong>Istoric legislativ - toate versiunile consolidate;</strong></li>
+							<li><strong>Modele de contracte, cereri, acțiuni;</strong></li>
+							<li><strong>Dosare în instanță</strong> - căutare nelimitată în baza de date și <strong>serviciu de urmărire prin sistem de notificări pe e-mail, atunci când urmează o nouă ședință sau când apare o decizie în dosar (în limita a 5 dosare).</strong></li>
+						</ul>
+						<p><strong>Funcționalități:</strong></p>
+						<ul>
+							<li>Căutare rapidă cu obținerea de rezultate relevante;</li>
+							<li>la nivel de act normativ: <strong>formă consolidată la orice dată</strong> calendaristică începând cu data publicării; navigare rapidă în document; descărcare și tipărire document; fișa actului; <strong>relații</strong> cu alte acte semnalate <strong>la nivel de paragraf; norme de aplicare prezentate la nivel de paragraf; COMPARARE TEXT și EVIDENȚIEREA MODIFICĂRILOR; COMPARARE CONSOLIDĂRI;</strong></li>
+							<li>Sistem de notificări noutăți legislative pe domeniile de interes și/sau asupra modificărilor pe documentele setate ca și favorite.</li>
+						</ul>
 					</div>
 				</div>
-				<div class="btn-wrapper"><a ui-sref="root.pricing" class="custom-btn btn-tertiary-base btn-tertiary-rs">&lt; înapoi</a></div>
+				<div class="btn-wrapper"><a ui-sref="root.pricing" class="custom-btn btn-tertiary-base btn-tertiary-rs">înapoi la abonamente</a></div>
 			</div>
 		</div>
 	</div>
@@ -824,13 +846,25 @@
 		<div class="col-md-12 col-lg-12 fadeIn animated">
 			<div class="details">
 				<a ui-sref="root.pricing" class="boxclose"></a>
-				<h4><a ui-sref="root.pricing"><span class="image-link cautare-btn zoomIn animated" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a> <span class="description-title">Pricing Details 03</span></h4>
+				<h4><a ui-sref="root.pricing"><span class="image-link cautare-btn zoomIn animated" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a> <span class="description-title">Abonamentul Basic</span></h4>
 				<div class="row">
 					<div class="col-md-12 col-lg-12">
-						<p>Pricing Details 03.</p>
+						<p><strong>Bază de date:</strong></p>
+						<ul>
+							<li>Legislația României publicată în Mof partea I, a V-a și a VI-a și <strong>partea I bis;</strong></li>
+							<li>Istoric legislativ - toate versiunile consolidate;</li>
+							<li>Modele de contracte, cereri, acțiuni;</li>
+							<li>Dosare în instanță - căutare nelimitată în baza de date și serviciu de urmărire prin sistem de notificări pe e-mail, atunci când urmează o nouă ședință sau când apare o decizie în dosar (în limita a 5 dosare).</li>
+						</ul>
+						<p><strong>Funcționalități:</strong></p>
+						<ul>
+							<li>Căutare rapidă cu obținerea de rezultate relevante;</li>
+							<li>la nivel de act normativ: <strong>formă consolidată la orice dată</strong> calendaristică începând cu data publicării; navigare rapidă în document; descărcare și tipărire document; fișa actului; <strong>relații</strong> cu alte acte semnalate <strong>la nivel de paragraf; norme de aplicare prezentate la nivel de paragraf; COMPARARE TEXT și EVIDENȚIEREA MODIFICĂRILOR; COMPARARE CONSOLIDĂRI;</strong></li>
+							<li>Sistem de notificări noutăți legislative pe domeniile de interes și/sau asupra modificărilor pe documentele setate ca și favorite.</li>
+						</ul>
 					</div>
 				</div>
-				<div class="btn-wrapper"><a ui-sref="root.pricing" class="custom-btn btn-tertiary-base btn-tertiary-rs">&lt; înapoi</a></div>
+				<div class="btn-wrapper"><a ui-sref="root.pricing" class="custom-btn btn-tertiary-base btn-tertiary-rs">înapoi la abonamente</a></div>
 			</div>
 		</div>
 	</div>
@@ -842,13 +876,27 @@
 		<div class="col-md-12 col-lg-12 fadeIn animated">
 			<div class="details">
 				<a ui-sref="root.pricing" class="boxclose"></a>
-				<h4><a ui-sref="root.pricing"><span class="image-link cautare-btn zoomIn animated" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a> <span class="description-title">Pricing Details 04</span></h4>
+				<h4><a ui-sref="root.pricing"><span class="image-link cautare-btn zoomIn animated" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a> <span class="description-title">Abonamentul Business</span></h4>
 				<div class="row">
 					<div class="col-md-12 col-lg-12">
-						<p>Pricing Details 04.</p>
+						<p><strong>Bază de date:</strong></p>
+						<ul>
+							<li>Legislația României publicată în Mof partea I, a V-a și a VI-a și partea I bis;</li>
+							<li>Istoric legislativ - toate versiunile consolidate;</li>
+							<li><strong>Jurisprudența României – include și cea mai mare colecție de spețe 2014;</strong></li>
+							<li>Modele de contracte, cereri, acțiuni;</li>
+							<li>Dosare în instanță - căutare nelimitată în baza de date și serviciu de urmărire prin sistem de notificări pe e-mail, atunci când urmează o nouă ședință sau când apare o decizie în dosar (în limita a 5 dosare).</li>
+						</ul>
+						<p><strong>Funcționalități:</strong></p>
+						<ul>
+							<li>Căutare rapidă cu obținerea de rezultate relevante;</li>
+							<li>la nivel de act normativ: <strong>formă consolidată la orice dată</strong> calendaristică începând cu data publicării; navigare rapidă în document; descărcare și tipărire document; fișa actului; <strong>relații</strong> cu alte acte semnalate <strong>la nivel de paragraf; norme de aplicare prezentate la nivel de paragraf; COMPARARE TEXT și EVIDENȚIEREA MODIFICĂRILOR; COMPARARE CONSOLIDĂRI;</strong></li>
+							<li><strong>comentarii expert - cele mai noi opinii - la nivel de paragraf pentru cele mai importante acte: Codul de procedură civilă, Codul muncii, Codul fiscal; Codul de procedură penală;</strong></li>
+							<li>Sistem de notificări noutăți legislative pe domeniile de interes și/sau asupra modificărilor pe documentele setate ca și favorite.</li>
+						</ul>
 					</div>
 				</div>
-				<div class="btn-wrapper"><a ui-sref="root.pricing" class="custom-btn btn-tertiary-base btn-tertiary-rs">&lt; înapoi</a></div>
+				<div class="btn-wrapper"><a ui-sref="root.pricing" class="custom-btn btn-tertiary-base btn-tertiary-rs">înapoi la abonamente</a></div>
 			</div>
 		</div>
 	</div>
@@ -860,13 +908,32 @@
 		<div class="col-md-12 col-lg-12 fadeIn animated">
 			<div class="details">
 				<a ui-sref="root.pricing" class="boxclose"></a>
-				<h4><a ui-sref="root.pricing"><span class="image-link cautare-btn zoomIn animated" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a> <span class="description-title">Pricing Details 05</span></h4>
+				<h4><a ui-sref="root.pricing"><span class="image-link cautare-btn zoomIn animated" data-wow-duration="0.5s" data-wow-delay="0.1s"></span></a> <span class="description-title">Abonamentul Leader</span></h4>
 				<div class="row">
 					<div class="col-md-12 col-lg-12">
-						<p>Pricing Details 05.</p>
+					<p><strong>Bază de date:</strong></p>
+						<ul>
+							<li>Legislația României publicată în Mof partea I, a V-a și a VI-a și partea I bis;</li>
+							<li>Istoric legislativ - toate versiunile consolidate;</li>
+							<li>Jurisprudența României – include și cea mai mare colecție de spețe 2014;</li>
+							<li>Modele de contracte, cereri, acțiuni;</li>
+							<li><strong>Legislația Uniunii Europene: toate actele normative publicate în Jurnalul Oficial al Comunității Europene, în limba română, grupate pe tematici și subtematici;</strong></li>
+							<li><strong>Jurisprudența europeană: decizii emise de către instanțele de judecată ale Uniunii Europene;</strong></li>
+							<li><strong>Calendar fiscal – acces la toate formularele care trebuie depuse de către contribuabili la organele fiscale și personalizare calendar de lucru cu acestea;</strong></li>
+							<li>Dosare în instanță - căutare nelimitată în baza de date și serviciu de urmărire prin sistem de notificări pe e-mail, atunci când urmează o nouă ședință sau când apare o decizie în dosar (în limita a 5 dosare).</li>
+							<li><strong>Comunitate Lege5: puteți comunica cu alți utilizatori de Lege5 din grupul dvs. de lucru (colegi, colaboratori).</strong></li>
+						</ul>
+						<p><strong>Funcționalități:</strong></p>
+						<ul>
+							<li>Căutare rapidă cu obținerea de rezultate relevante;</li>
+							<li>la nivel de act normativ: <strong>formă consolidată la orice dată</strong> calendaristică începând cu data publicării; navigare rapidă în document; descărcare și tipărire document; fișa actului; <strong>relații</strong> cu alte acte semnalate <strong>la nivel de paragraf; norme de aplicare prezentate la nivel de paragraf; COMPARARE TEXT și EVIDENȚIEREA MODIFICĂRILOR; COMPARARE CONSOLIDĂRI;</strong></li>
+							<li>comentarii expert - cele mai noi opinii - la nivel de paragraf pentru cele mai importante acte: Codul de procedură civilă, Codul muncii, Codul fiscal; Codul de procedură penală;</li>
+							<li><strong>posibilitatea de a efectua comentarii/ notițe personale pe text;<strong></li>
+							<li>Sistem de notificări noutăți legislative pe domeniile de interes și/sau asupra modificărilor pe documentele setate ca și favorite.</li>
+						</ul>						
 					</div>
 				</div>
-				<div class="btn-wrapper"><a ui-sref="root.pricing" class="custom-btn btn-tertiary-base btn-tertiary-rs">&lt; înapoi</a></div>
+				<div class="btn-wrapper"><a ui-sref="root.pricing" class="custom-btn btn-tertiary-base btn-tertiary-rs">înapoi la abonamente</a></div>
 			</div>
 		</div>
 	</div>
@@ -877,6 +944,7 @@
 <div class="pricing">
 	<div class="container" ui-view="pricing-view" autoscroll="false">		
 	</div>
+	<a class="anchor" id="pricing-details"></a>
 	<div class="container" ui-view="pricing-details-view" autoscroll="false">		
 	</div>
 	<!-- /.container -->

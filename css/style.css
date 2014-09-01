@@ -400,6 +400,58 @@ p {
           background: #0fa285 !important; }
       .pricing .panel-default .list-group .list-group-item .custom-btn {
         margin: 15px 0px; }
+  .pricing .details {
+    padding-top: 25px;
+    margin-bottom: 10px;
+    color: #fff; }
+    .pricing .details a.boxclose {
+      float: right;
+      margin-top: 0px;
+      margin-right: 0px;
+      cursor: pointer;
+      color: #FFF;
+      background: #81BE3F;
+      font-size: 40px;
+      font-weight: 300;
+      display: inline-block;
+      line-height: 0px;
+      padding: 15px 5px; }
+    .pricing .details .boxclose:before {
+      content: "×"; }
+    .pricing .details img {
+      width: 100%;
+      height: auto; }
+    .pricing .details h4 {
+      font-size: 32px;
+      margin: 0px 0 15px;
+      font-weight: 300;
+      display: table; }
+      .pricing .details h4 .description-title {
+        display: table-cell;
+        vertical-align: middle; }
+      .pricing .details h4 .image-link {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100px;
+        height: 100px; }
+      .pricing .details h4 .cautare-btn {
+        background: url("../images/cautare-over.png") no-repeat center center; }
+      .pricing .details h4 .comparare-btn {
+        background: url("../images/comparare-over.png") no-repeat center center; }
+      .pricing .details h4 .istoric-btn {
+        background: url("../images/istoric-over.png") no-repeat center center; }
+      .pricing .details h4 .versionare-btn {
+        background: url("../images/versionare-over.png") no-repeat center center; }
+    .pricing .details p {
+      font-size: 16px;
+      line-height: 30px;
+      color: #fff;
+      text-align: justify; }
+    .pricing .details ul li {
+      font-size: 16px;
+      line-height: 30px;
+      color: #fff;
+      text-align: justify; }
 
 /* Heading Style  */
 .panel-heading-custom {
