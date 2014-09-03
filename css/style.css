@@ -1,4 +1,3 @@
-@charset "IBM437";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,latin-ext);
 body, html {
   height: 100%;
@@ -251,14 +250,20 @@ p {
         margin-right: 0px;
         cursor: pointer;
         color: #FFF;
-        background: #81BE3F;
+        background: #A03FBE;
         font-size: 40px;
         font-weight: 300;
         display: inline-block;
         line-height: 0px;
-        padding: 15px 5px; }
+        width: 30px;
+        height: 30px; }
       .features .container .details .boxclose:before {
-        content: "×"; }
+        content: "\78";
+        font-family: "icomoon", sans-serif;
+        position: relative;
+        font-size: 32px;
+        top: 13px;
+        left: -2px; }
       .features .container .details img {
         width: 100%;
         height: auto; }
@@ -410,14 +415,20 @@ p {
       margin-right: 0px;
       cursor: pointer;
       color: #FFF;
-      background: #81BE3F;
+      background: #A03FBE;
       font-size: 40px;
       font-weight: 300;
       display: inline-block;
       line-height: 0px;
-      padding: 15px 5px; }
+      width: 30px;
+      height: 30px; }
     .pricing .details .boxclose:before {
-      content: "×"; }
+      content: "\78";
+      font-family: "icomoon", sans-serif;
+      position: relative;
+      font-size: 32px;
+      top: 13px;
+      left: -2px; }
     .pricing .details img {
       width: 100%;
       height: auto; }
