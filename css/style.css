@@ -183,6 +183,8 @@ p {
     font-size: 16px;
     margin: 0 auto 30px;
     line-height: 25px; }
+    .welcome p a {
+      color: #4C9B10; }
   .welcome li {
     font-size: 16px;
     margin-bottom: 10px; }
