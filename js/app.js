@@ -98,18 +98,6 @@ app.config(function($stateProvider, $urlRouterProvider, $stickyStateProvider){
 		//sticky: true
 	})
 
-	.state('root.pricing-details-01', {
-		url: "pricing-01",
-		views: {
-			"pricing-details-view@": { templateUrl: "pricing-details-01" }
-		},
-		onEnter: function(){
-			// var options = { speed: 100, easing: 'easeOutCubic',updateURL: false, offset: 0};
-			// smoothScroll.animateScroll( null, '#pricing-detail', options );
-		},
-		//sticky: true
-	})
-
 	.state('root.pricing-details-02', {
 		url: "pricing-02",
 		views: {
